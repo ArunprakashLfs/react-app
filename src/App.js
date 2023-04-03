@@ -40,8 +40,8 @@ const App = ()=>{
                 )
                 // {console.log(val);}
             })}
-            <h3>{dates}</h3>
-            <h4>{title}</h4>
+            <h4 className='job-date'>{dates}</h4>
+            <h3>{title}</h3>
             <p>{duties}</p>
             </section>
     )

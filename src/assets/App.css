@@ -81,9 +81,11 @@ Variables
   }
   h1 {
     font-size: 3rem;
+    text-align: center;
   }
   h2 {
     font-size: 2rem;
+    text-align: center;
   }
   h3 {
     font-size: 1.25rem;
@@ -169,6 +171,7 @@ Variables
     flex-wrap: wrap;
   }
   .job-btn {
+    text-align: center;
     background: transparent;
     border-color: transparent;
     text-transform: capitalize;
