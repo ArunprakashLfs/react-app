@@ -27,7 +27,7 @@ const App = ()=>{
     console.log(title);
     console.log(company);
     return (
-        <div>
+        <section>
              {/* {console.log(value)} */}
             <h1>Experience</h1>
             {company.map((val, index)=>{
@@ -40,10 +40,10 @@ const App = ()=>{
                 )
                 // {console.log(val);}
             })}
-            <div>{dates}</div>
-            <div>{title}</div>
+            <h3>{dates}</h3>
+            <h4>{title}</h4>
             <p>{duties}</p>
-            </div>
+            </section>
     )
 }
 export default App;
