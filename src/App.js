@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './assets/App.css';
+import {v4 as uuidv4} from 'uuid';
 let URL = 'https://course-api.com/react-tabs-project';
 
 const App = ()=>{
@@ -21,7 +22,6 @@ const App = ()=>{
         return(
             <h1>...Loading</h1>
         )
-        
     }
     const {title, duties, dates} = company[value];
     console.log(title);
@@ -34,7 +34,7 @@ const App = ()=>{
                 // {console.log(val);}
                 return (
                 <>
-                <button className='job-btn' onClick={()=>{setvalue(index)}}>{val.company}</button>
+                <button className='job-btn' key={uuidv4}   onClick={()=>{setvalue(index)}}>{val.company}</button>
 
                 </>
                 )
@@ -42,7 +42,7 @@ const App = ()=>{
             })}
             <h4 className='job-date'>{dates}</h4>
             <h3>{title}</h3>
-            <p>{duties}</p>
+            <p key={uuidv4}>{duties}</p>
             </section>
     )
 }
